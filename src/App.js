@@ -14,6 +14,8 @@ import NotFound from "./components/pages/NotFound";
 import AddUser from "./components/users/AddUser";
 import EditUser from "./components/users/EditUser";
 import User from "./components/users/User";
+import Register from './components/pages/Register'
+import Login from './components/pages/Login';
 
 function App(props) {
   return (
@@ -23,6 +25,8 @@ function App(props) {
 
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/register" component={Register}/>
+          <Route exact path="/login" component={Login} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/users/add" component={AddUser} />
